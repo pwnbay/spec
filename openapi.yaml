@@ -1,11 +1,3 @@
-openapi: 3.0.4
-info:
-  title: PwnBay Spec
-  version: 1.0.0
-  description: |-
-    The current specification contains basic data structures used
-    to describe resources used by the PwnBay platform. 
-
 components:
   schemas:
     Program:
