@@ -15,6 +15,18 @@ import (
 	"github.com/getkin/kin-openapi/openapi3"
 )
 
+// Program defines model for Program.
+type Program struct {
+	// Assets Assets of the program
+	Assets []interface{} `json:"assets"`
+
+	// Challenges Challenges of the program
+	Challenges []interface{} `json:"challenges"`
+
+	// Name Name of the program
+	Name string `json:"name"`
+}
+
 // Base64 encoded, gzipped, json marshaled Swagger object
 var swaggerSpec = []string{
 
