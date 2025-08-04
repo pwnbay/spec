@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.4",
+    "info": {
+      "title": "PwnBay Spec",
+      "version": "1.0.0",
+      "description": "The current specification contains basic data structures used\nto describe resources used by the PwnBay platform. "
+    },
+    "components": {
+      "schemas": {
+        "Program": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the program",
+              "example": "ctf-program-01"
+            },
+            "assets": {
+              "type": "array",
+              "description": "Assets of the program"
+            },
+            "challenges": {
+              "type": "array",
+              "description": "Challenges of the program"
+            }
+          },
+          "required": [
+            "name",
+            "assets",
+            "challenges"
+          ]
+        }
+      }
+    }
+  }
